@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="exstyle.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Big+Shoulders+Inline+Text:wght@900&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Big+Shoulders+Inline+Text:wght@900&family=Lobster&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Big+Shoulders+Inline+Text:wght@900&family=Dai+Banna+SIL:wght@300&family=Lobster&display=swap" rel="stylesheet">
+        
+    <title>Home</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="logo">
+            <h1 class="logo-text">SakithDW</h1>
+        </div>
+        <div class="link-box">
+            <div class="nav-link"><a href="#">HOME</a></div>
+            <div class="nav-link" ><a href="#">PROJECTS</a></div>
+            <div class="nav-link"><a href="#">SHOP</a></div>
+            <div class="nav-link"><a href="#">SITE MAP</a></div>
+            <div class="nav-link"><a href="#">FEEDBACK</a></div>
+            <div class="nav-link" ><a href="#">HELP?</a></div>
+            <div class="burg-stk" onclick="drag_right()"><button></button></div>
+
+        </div>
+    </div>
+    <div class="slide-box" id="box">
+        <div class="link-box2">
+            <div class="nav-link2"><a href="#">HOME</a></div>
+            <div class="nav-link2" ><a href="#">PROJECTS</a></div>
+            <div class="nav-link2"><a href="#">SHOP</a></div>
+            <div class="nav-link2"><a href="#">SITE MAP</a></div>
+            <div class="nav-link2"><a href="#">FEEDBACK</a></div>
+            <div class="nav-link2" ><a href="#">HELP?</a></div>
+        </div>
+        <button class="back-btn" onclick="go_back()">
+            
+        </button>
+    </div>
+    <div class="viewbox">
+        <div class="img"></div>
+        <div class="intro">
+            <div class="who">
+                <h1><b>Who am I ?</b></h1>
+            </div>
+            <div class="intro-text">
+                <h3>I'm an undergraguate software engineering student<br> 
+                    at Informatics Institute of Technology(IIT).<br>
+                    I do learning Java,Python, Machine learning and web development.
+                    I've done a few java and python beginners level projects. 
+                </h3>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+<footer>
+    <div class="footer">
+        <div class="foot-link">
+            <div class="foot-img facebook"><a href="#"></a></div>
+            <div class="foot-img twitter"><a href="#"></a></div>
+            <div class="foot-img instagram"><a href="#"></a></div>
+            <div class="foot-img linkedin"><a href="#"></a></div>
+            <div class="foot-img mail"><a href="#"></a></div>
+        </div>
+        <div class="copy">
+            <h3 class="copy-text">Copyright © SPORTZILLA</h3>
+        </div>
+    </div>
+</footer>
+<script>
+    let box = document.getElementById("box");
+
+    function drag_right(){
+        box.style.marginLeft = "0px";  
+    }
+
+    function go_back() {
+        box.style.marginLeft = "-540px";
+    }
+</script>
+</html>
