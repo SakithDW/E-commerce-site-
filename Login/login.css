@@ -2,25 +2,59 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     display: flex;
-    justify-content: center;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
     align-items: center;
     height: 100vh;
     margin: 0;
+    background-image: url(/Images/login-bg3.jpg);
+    background-size: cover;
+    backdrop-filter: blur(4px);
+    /* background: linear-gradient(to top, transparent 10%, rgb(42, 5, 83) 90%);
+    background-color: rgb(27, 2, 48); */
+    /* background: linear-gradient(to bottom, transparent 10%, rgb(13, 8, 19) 90%); */
+
+    
 }
+.banner{
+    display: flex;
+    border-radius: 30px;
+    width: 380px;
+    height: 58vh;
+    color: rgb(252, 255, 255);
+    text-shadow: 5px 5px 4px rgba(88, 56, 77, 0.5);
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    /* backdrop-filter: blur(10px); */
+    font-weight: 800;
+    font-style: italic white;
+    font-size: 1.5rem;
+    padding: 15px;
+}
+.banner a {
+    text-decoration: underline;
+    color: rgb(239, 233, 243);
+}
+
 .login-container {
+    display: flex;
+    flex-direction: column;
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
+    align-items: center;
+    justify-content: center;
 }
 .login-container h2 {
     margin-bottom: 20px;
     text-align: center;
 }
-.login-container input[type="text"],
-.login-container input[type="password"] {
-    width: 100%;
+.input-field {
+    width: 93%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
@@ -28,8 +62,9 @@ body {
 }
 .login-container input[type="submit"] {
     width: 100%;
+    margin-top: 10px;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #32246b;
     border: none;
     border-radius: 4px;
     color: white;
@@ -37,5 +72,14 @@ body {
     cursor: pointer;
 }
 .login-container input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #26084d;
+}
+.signup-btn{
+    
+    margin-top: 15px;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    
+    
 }
