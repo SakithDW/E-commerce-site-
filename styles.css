@@ -4,7 +4,8 @@
 }
 .viewbox{
     display: flex;
-    background-color: rgb(19, 1, 16);
+    background-color: rgb(18, 1, 26);
+    
     /* height: 100vh; */
     /* width: 100vw; */
     justify-content: space-evenly;
@@ -53,7 +54,8 @@
 
 }
 .item-box:hover {
-    background: linear-gradient(to top, transparent 50%, rgb(31, 6, 58) 100%);
+    background: linear-gradient(to top, transparent 10%, rgb(31, 6, 58) 100%);
+    background-color: rgb(52, 11, 58);
 }
 
 .item-img{

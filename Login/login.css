@@ -74,12 +74,3 @@ body {
 .login-container input[type="submit"]:hover {
     background-color: #26084d;
 }
-.signup-btn{
-    
-    margin-top: 15px;
-    border-radius: 5px;
-    color: black;
-    cursor: pointer;
-    
-    
-}
