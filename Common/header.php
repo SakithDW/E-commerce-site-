@@ -5,8 +5,8 @@
         <ul class="link-box">
             
             <li class="nav-link"><a href="#">HOME</a></li>
-            <li class="nav-link"><a href="#">Add Items</a></li>
-            <li class="nav-link"><a href="#">SHOP</a></li>
+            <li class="nav-link"><a href="../Add-Items/add-items.php">Add Items</a></li>
+            <li class="nav-link"><a href="../shop-page/shop.php">SHOP</a></li>
             <li class="nav-link"><a href="#">Help</a></li>
             <li class="nav-link" id="shop-cart"><a href="">
                 <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#d1add2">

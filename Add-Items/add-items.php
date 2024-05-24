@@ -14,8 +14,24 @@
 
     <title>Add Items</title>
 </head>
+<header><?php include("../Common/header.php")?></header>
 <body>
-    <?php include("../Common/header.php")?>
-    <div></div>
+    
+    <div class="viewbox">
+        <section class="input-box">
+            <h2>Add Products</h2>
+            <form method="post">
+                <label for="product-name">product name</label>
+                <input class="input-field" type="text" required placeholder="Enter the product name">
+                <label for="price">Price</label>
+                <input class="input-field" type="number" required placeholder="Enter the price">
+                <label for="price">Description</label>
+                <input class="input-field" type="text" required placeholder="Enter the description">
+                <input type="file" required>
+                <input type="submit" value="submit">
+            </form>
+        </section>
+    </div>
 </body>
+<?php include("../Common/footer.php")?>
 </html>

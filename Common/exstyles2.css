@@ -1,6 +1,6 @@
 *{
-    padding: 0px;
     margin: 0px;
+    padding: 0px;
 }
 .nav-bar{
     display: flex;
@@ -11,6 +11,7 @@
     background-color: rgb(23, 2, 40);
     align-items: center;
     justify-content: space-between;
+    z-index: 1000;
 }
 .slide-box{
     display: none;   
@@ -20,7 +21,7 @@
     padding: 10px;
     width: 190px;
     font-family: 'Big Shoulders Inline Text', cursive;
-    /* flex: 2; */
+    flex: 2;
 }
 .logo-text{
     color: whitesmoke;
@@ -180,6 +181,7 @@
     .nav-link{
         display: none;
     }
+
     .burg-stk {
         display: flex;
         background-color: rgb(23, 2, 40);
