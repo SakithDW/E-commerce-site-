@@ -17,6 +17,7 @@
                 </svg>
                 <div class="counter">
                     <p>0</p>
-                </div>
+                </div></a>
+            </li>
         </ul>
     </div>

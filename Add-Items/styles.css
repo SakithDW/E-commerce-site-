@@ -5,7 +5,7 @@
 .viewbox {
     display: flex;
     flex-direction: column;
-    height: 61.9vh;
+    height: 100vh;
     width: 100%;
     padding-top: 120px;
     justify-content: center;
@@ -22,7 +22,6 @@
     width: 500px;
     background: linear-gradient(to bottom, transparent 40%, rgb(234, 108, 5) 180%);
     background-color: rgb(42, 2, 48);
-    /* background-color: azure; */
     justify-content: center;
     align-items: center;
     border-radius: 30px;
@@ -30,7 +29,7 @@
 .input-box form{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
     font-size: 1.2rem;
 }
 .input-box form input[type="submit"]{
@@ -45,9 +44,41 @@
     font-size: 16px;
     cursor: pointer;
 }
+.input-box form input[type="file"] {
+    color: #cf9cd1;
+}
+.input-box h2 {
+    padding-bottom: 5px;
+}
 .input-box h2,.input-box label{
     text-decoration: none;
     color: #cf9cd1;
+}
+.display-message {
+    display: flex;
+    position: relative;
+    width: 400px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to left, transparent 40%, rgb(234, 108, 5) 180%);
+    background-color: rgb(42, 2, 48);
+    color: #cf9cd1;
+    border: 1px solid #d6e9c6;
+    padding: 1px;
+    border-radius: 30px;
+    margin: 10px auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.display-message .fas.fa-times {
+    color: red;
+    display: flex;
+    position: absolute;
+    top: 17px;
+    right: 10px;
+    cursor: pointer;
 }
 
 

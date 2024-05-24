@@ -2,7 +2,7 @@
 
     session_start();
 
-        include("connection.php");
+        include("../Common/connection.php");
         include("functions.php");
         if($_SERVER["REQUEST_METHOD"]=="POST"){
             $username = $_POST["username"];
@@ -47,6 +47,7 @@
     <title>Login</title>
 </head>
 <body>
+    
     <div class="banner">
         <p>Log in to access your account, track orders, and <br>
             enjoy personalized shopping experiences.<br>
