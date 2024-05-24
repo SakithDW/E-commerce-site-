@@ -1,3 +1,40 @@
+<?php
+
+    session_start();
+
+        include("connection.php");
+        include("functions.php");
+        if($_SERVER["REQUEST_METHOD"]=="POST"){
+            $username = $_POST["username"];
+            $password = $_POST["password"];
+
+            if(!empty($username)&&!empty($password)){
+                $query = "select * from users where username = '$username' and password = '$password'";
+                $result = mysqli_query($conn, $query);
+
+               
+				if($result && mysqli_num_rows($result) > 0)
+				{
+
+					$user_data = mysqli_fetch_assoc($result);
+					
+					if($user_data['password'] === $password)
+					{
+
+						$_SESSION['user_id'] = $user_data['user_id'];
+						header("Location: ../shop-page/shop.php");
+						die;
+					}
+				}
+                // echo"wrong username or passsword";
+			
+
+            }
+        }
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,13 +55,14 @@
     </div>
     <div class="login-container">
         <h2>LogIn</h2>
-        <form action="/login" method="post">
+        <!-- <form name="form" action="login.php" method="post"> -->
+        <form method="post">
             <label for="username">Username</label>
             <input class="input-field" type="text" id="username" name="username" required placeholder="Enter Your usermame ">
             <label for="password">Password</label>
             <input class="input-field" type="password" id="password" name="password" required placeholder="Enter Your password ">
             <input type="submit" value="Login">
-            <p>Don't you have an account.<a id="show-signup"  href="./signup.html">Register here.</a></p>
+            <p>Don't you have an account.<a id="show-signup"  href="./signup.php">Register here.</a></p>
         </form>
          
         
