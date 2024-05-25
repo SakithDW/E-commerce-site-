@@ -16,7 +16,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
         // save to database
         $user_id = random_num(20);
 
-        // Prepare the SQL query
+        // Prepare the SQL query with placeholders
         $stmt = $conn->prepare("INSERT INTO users (user_id, username, password, email) VALUES (?, ?, ?, ?)");
 
         // Check if prepare() failed and output the error
@@ -30,7 +30,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
         // Execute the statement
         if ($stmt->execute()) {
             header("Location: login.php");
-            die;
+            exit; // Use exit instead of die
         } else {
             echo "Error: " . $stmt->error;
         }

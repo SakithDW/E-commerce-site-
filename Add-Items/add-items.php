@@ -67,7 +67,9 @@
                 <input type="submit" name="add_product" value="Add Item">
             </form>
         </section>
+        <div><a href="../Store-Page/store.php">Go to store</a></div>
     </div>
+    
 </body>
 <?php include("../Common/footer.php")?>
 </html>

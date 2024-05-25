@@ -1,0 +1,98 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+.box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+    min-height: 461px;
+    background: linear-gradient(to bottom, transparent 50%, rgb(234, 108, 5) 180%);
+    background-color: rgb(18, 1, 26);
+}
+
+.table-container {
+    
+    padding: 20px;
+}
+table {
+    margin-top: 140px;
+    margin-bottom: 60px;
+    color: #cf9cd1;
+    width: 100%;
+    max-width: 1000px;
+    border-collapse: collapse;
+    background: linear-gradient(to bottom, transparent 40%, rgb(234, 108, 5) 180%);
+    background-color: rgb(42, 2, 48);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+th, td {
+    height: 40px;
+    padding: 12px 15px;
+    text-align: left;
+    
+}
+tr{
+    
+    border-bottom: 1px solid #cea1cb;
+}
+th {
+    /* background-color: #f4f4f4; */
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+    background: linear-gradient(to bottom, transparent 80%, #cea1cb 190%);
+    background-color: rgb(42, 2, 48);
+    
+}
+td {
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 500;
+    font-size: 1.4rem;
+    
+    
+}
+.delete-prod-btn, .edit-prod-btn {
+    color: #333;
+    text-decoration: none;
+}
+.data:hover {
+    background: linear-gradient(to top, transparent 40%, rgb(31, 6, 58) 100%);
+    background-color: rgb(52, 11, 58);
+}
+.delete-prod-btn, .edit-prod-btn {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px; /* Adjust width as needed */
+    height: 30px; /* Adjust height as needed */
+    border-radius: 4px;
+    background-color: #cf9cd1;
+    transition: background-color 0.3s ease;
+}
+
+.delete-prod-btn:hover, .edit-prod-btn:hover {
+    color: #220941;
+}
+#action-btns {
+    
+    display: flex;
+    /* vertical-align: middle; */
+    padding-top: 42px;
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px;
+} 
+.product-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+}
