@@ -5,16 +5,49 @@
 .viewbox{
     display: flex;
     flex-wrap: wrap;
+    padding-top: 140px;
     background: linear-gradient(to bottom, transparent 20%, rgb(234, 108, 5) 180%);
     background-color: rgb(18, 1, 26);
-    
-    /* height: 100vh; */
-    /* width: 100vw; */
     justify-content: space-evenly;
     align-items: center;
-    /* flex-direction: column; */
-    /* flex-wrap: ; */
-    /* gap: 40px; */
+    /* z-index: 900; */
+}
+.box2{
+    display: flex;
+    gap: 30px;
+
+}
+
+.display-message {
+    display: flex;
+    position: relative;
+    width: 400px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to left, transparent 40%, rgb(234, 108, 5) 180%);
+    background-color: rgb(42, 2, 48);
+    color: #cf9cd1;
+    border: 1px solid #d6e9c6;
+    padding: 1px;
+    border-radius: 30px;
+    margin-top: -20px;
+    margin-bottom: 30px;
+    /* margin: 10px auto; */
+    text-align: center;
+    font-family: Arial, sans-serif;
+    z-index: 100;
+}
+
+.display-message .fas.fa-times {
+    color: red;
+    display: flex;
+    position: absolute;
+    top: 17px;
+    right: 30px;
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
 }
 
 .sub-box{
@@ -29,16 +62,7 @@
     /* flex: 4; */
     
 }
-.shop-box{
-    display: flex;
-    /* background-color: azure; */
-    height: 450px;
-    width: 600px;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 20px;
-    /* flex: 2; */
-}
+
 .box1{
     margin-top: 120px;
 }
@@ -50,12 +74,15 @@
     background: linear-gradient(to bottom, transparent 50%, rgb(31, 6, 58) 100%);
     background-color: rgb(52, 11, 58);
     border-radius: 10px;
-    height: 450px;
+    height: 400px;
     width: 280px;
     gap: 10px;
+    /* margin-top: 40px; */
+    margin-bottom: 40px;
     /* flex: 1; */
 
 }
+
 .item-box:hover {
     background: linear-gradient(to top, transparent 10%, rgb(31, 6, 58) 100%);
     background-color: rgb(52, 11, 58);
@@ -63,6 +90,8 @@
 
 .item-img{
     display: flex;
+    align-items: center;
+    justify-content: center;
     /* margin-top: 10px; */
     /* background-color: brown; */
     border-radius: 10px;
@@ -70,10 +99,21 @@
     height: 250px;
     width: 250px;
 }
+.item-img>img{
+    display: flex;
+    /* padding: 4px; */
+    margin: 10px ;
+    height: 240px;
+    width: 240px;
+    object-fit: cover;
+    border-radius: 10px;
+}
 .item-desc{
     display: flex;
+    align-items: center;
+    justify-content: center;
     /* background-color: brown; */
-    height: 100px;
+    height: 70px;
     width: 280px;
 }
 .div1{
@@ -96,12 +136,12 @@
     margin-top: -10px;
     height: 34px;
     width: 115px;
-    font-size: 1.3rem;
+    font-size: 1.15rem;
     
     border-radius: 10px;
     /* background-color: #d1add2;
     box-shadow: 1px 1px #d1add2; */
-    box-shadow: 2px 2px #cf9cd1;
+    box-shadow: 1px 1px #cf9cd1;
     background: linear-gradient(to bottom, transparent 10%, rgb(38, 3, 49) 180%);
     
     background-color: #cf9cd1;
@@ -110,14 +150,14 @@
 .buy:active{
     margin-top: -9px;
     margin-right: -1px;
-    box-shadow: 1px 1px #cf9cd1;
+    box-shadow: 0px 0px #cf9cd1;
     background-color: #cf9cd1;
-    /* transition: 0.5s ease-in-out; */
+    transition: 0.1s ease;
 
 }
 .desc{
     text-decoration: none;
-    padding: 10px;
+    padding: 15px;
 }
 .desc :active{
     text-decoration: underline;
@@ -162,6 +202,10 @@
 .info{
     color: #000;
     font-size: 1.4rem;
+}
+.space-box{
+    display: flex;
+    height: 100px;
 }
 @media ((max-width:1210px) and (min-width:598px)){
 
