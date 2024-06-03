@@ -20,7 +20,7 @@
     <div class="box-container">
         <div class="table-container">
             <?php
-            $display_product = mysqli_query($conn,"SELECT * FROM products");
+            $display_product = mysqli_query($conn,"SELECT * FROM `products`");
             if(mysqli_num_rows($display_product) > 0){
                 echo "<table>
                 <thead>

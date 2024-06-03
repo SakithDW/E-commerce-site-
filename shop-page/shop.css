@@ -15,6 +15,7 @@
 .box2{
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
 
 }
 

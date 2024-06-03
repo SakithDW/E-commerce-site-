@@ -1,6 +1,7 @@
 .viewbox{
     display: flex;
     justify-content: center;
+    padding-top: 130px;
     align-items: center;
     height: 100vh;
     width: 100%;
@@ -17,7 +18,7 @@
 }
 
 .cart-table {
-    margin-top: 140px;
+    /* margin-top: 140px; */
     margin-bottom: 60px;
     color: #cf9cd1;
     width: 100%;
@@ -81,15 +82,35 @@ tr{
     color: #ffffff;
 }
 
+.remove-box{
+    display: fl;
+}
+
 .remove-link {
+    display: flex;
+    justify-content: space-between;
     color: #007BFF;
     text-decoration: none;
     cursor: pointer;
 }
 
-.remove-link:hover {
-    text-decoration: underline;
+.remove-link .fas {
+    color: #cf9cd1;
+    text-decoration: none;
+    margin-top: -4.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px; /* Adjust width as needed */
+    height: 30px; /* Adjust height as needed */
+    border-radius: 4px; 
+    transition: background-color 0.3s ease;
 }
+.remove-link p{
+    color: #cf9cd1;
+}
+
+
 
 .cart-actions {
     display: flex;
@@ -100,37 +121,69 @@ tr{
     border-radius: 20px;
     background: linear-gradient(to bottom, transparent 20%, rgb(234, 108, 5) 220%);
     background-color: rgb(42, 2, 48);
-    color: white;
+    color: #cea1cb;
 }
 
 .continue-btn,
 .checkout-btn {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
     color: white;
     border: none;
     padding: 5px 10px;
     cursor: pointer;
     margin-left: 5px;
+    border-radius: 10px;
     background: linear-gradient(to bottom, transparent 5%, #000000 150%);
     background-color: rgb(49, 243, 11);
-}
-.continue-btn:hover {
-    background: linear-gradient(to bottom, transparent 5%, #000000 150%);
-    background-color: rgba(50, 243, 11, 0.484);
-    color: #ffffff;
-}
-.checkout-btn:hover{
-    background: linear-gradient(to bottom, transparent 5%, #000000 150%);
-    background-color: rgba(50, 243, 11, 0.484);
-    color: #ffffff;
 }
 
 .continue-btn:hover,
 .checkout-btn:hover {
-    background-color: #45a049;
+    background: linear-gradient(to bottom, transparent 5%, #000000 150%);
+    background-color: rgba(50, 243, 11, 0.484);
     color: white;
 }
 
 .grand-total {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
 }
+.delete-all{
+    display: flex;
+    padding: 15px;
+    margin-top: 15px;
+    color: white;
+}
+.delete-all-btn{
+    display: flex;
+    height: 30px;
+    width: 120px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, transparent 20%, #000000 150%);
+    background-color: rgb(243, 11, 11);
+    
+}
+
+.delete-all-btn:hover{
+    background: linear-gradient(to bottom, transparent 10%, #000000 150%);
+    background-color: rgba(243, 11, 11, 0.413);
+    color: #ffffff;
+}
+.delete-all-btn a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+

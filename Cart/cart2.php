@@ -1,15 +1,4 @@
-<?php 
-    include("../Common/connection.php");
-    if(isset($_POST['update_product_quantity'])){
-        $update_value = $_POST['update_quantity'];
-        $update_id = $_POST['update_quantity_id'];
-        $update_quantity_query = mysqli_query($conn,"UPDATE `cart` set `quantity`=$update_value where `id`=$update_id") or die("Query Failed");
-        if($update_quantity_query){
-            header("location :./cart.php");
-        }
-
-    }
-?>
+<?php include("../Common/connection.php") ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,41 +47,37 @@
                         </tr>
                     </thead>
                     <tbody>";
-                    $num = 1;
+                    $num=1;
                     while($fetch_cart_products= mysqli_fetch_assoc($select_cart_products)){
-                        ?>
+                        
+                        echo "
                         <tr>
-                        <td><?php echo $num ?></td>
-                        <td><?php echo $fetch_cart_products['name'] ?></td>
-                        <td><img src="../Images/<?php echo $fetch_cart_products['image']?>" alt="<?php echo $fetch_cart_products['name'] ?>" class="product-image"></td>
-                        <td><?php echo $fetch_cart_products['price']?>/-</td>
-                        <td>
-                            <form action="" method="post">
-                                <input type="hidden" value="<?php echo $fetch_cart_products['id']?>" name="update_quantity_id">
-                                <div class="quantity-box">
-                                    <input type="number" min=1 value="<?php echo $fetch_cart_products['quantity']?>" name="update_quantity">
-                                    <input type="submit" name="update_product_quantity" id="update-quantity" value="update" >
-                                </div>
-                        </form>
-                            
-                        </td>
-                        <td><?php echo $fetch_cart_products['price']?></td>
-                        <td><a href="#" class="remove-link"><i class="fas fa-trash"></i><p>remove</p></a></td>
-                    </tr>
-                    <?php
+                                <td>{$num}</td>
+                                <td>{$fetch_cart_products['name']}</td>
+                                <td><img src='../Images/{$fetch_cart_products['image']}' alt='Headphone' class='product-image'></td>
+                                <td>{$fetch_cart_products['price']}/-</td>
+                                <td>
+                                    <div class='quantity-box'>
+                                        <input type='number' min=1>
+                                        <input type='submit' name='' id='update-quantity' value='update'>
+                                    </div>
+                                </td>
+                                <td>$12,000/-</td>
+                                <td><a href='#' class='remove-link'><i class='fas fa-trash'></i><p>remove</p></a></td>
+                            </tr>";
+
+                        ?>
+                        <?php
                     $num++;
+                    
                     }
+                    echo"";
                     }
                     else{
                         echo "No products available";
                     }
                 ?>
-                
-                    
-                    
-                    
-                </tbody>
-            </table>
+                </tbody></table>
             <div class="cart-actions">
                 <a href="" class="continue-btn">Continue Shopping</a>
                 <div class="grand-total">Grand Total : <span>$52,000 /-</span></div>
